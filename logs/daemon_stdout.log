@@ -538,3 +538,24 @@
 [2026-02-18 18:45:56] Starting Fulcanellie character (run #1)
 [2026-02-18 18:45:56] Loading environment variables from .env file
 [2026-02-18 18:45:56] Running Node.js application via npm script
+[2026-02-19 10:03:19] ERROR: Fulcanellie character crashed with exit code 143 after 55043 seconds
+[2026-02-19 10:03:19] This is crash #1 out of 1 total runs
+[2026-02-19 10:03:19] Waiting 5 seconds before next run...
+[2026-02-19 10:03:29] ===== NEW DAY - ROTATING LOG FILE =====
+[2026-02-19 10:03:32] Service continuing at: Thu Feb 19 10:03:31 PST 2026
+[2026-02-19 10:03:33] Total runs so far: 2, Crashes: 1
+[2026-02-19 10:03:34] Starting Fulcanellie character (run #2)
+[2026-02-19 10:03:36] Loading environment variables from .env file
+[2026-02-19 10:03:37] Running Node.js application via npm script
+[2026-02-19 10:14:33] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-19 10:14:33] Service started at: Thu Feb 19 10:14:33 PST 2026
+[2026-02-19 10:14:34] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260219.log
+[2026-02-19 10:14:34] Starting Fulcanellie character (run #1)
+[2026-02-19 10:14:34] Loading environment variables from .env file
+[2026-02-19 10:14:34] Running Node.js application via npm script
+[2026-02-19 11:58:08] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-19 11:58:08] Service started at: Thu Feb 19 11:58:08 PST 2026
+[2026-02-19 11:58:08] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260219.log
+[2026-02-19 11:58:08] Starting Fulcanellie character (run #1)
+[2026-02-19 11:58:09] Loading environment variables from .env file
+[2026-02-19 11:58:09] Running Node.js application via npm script
