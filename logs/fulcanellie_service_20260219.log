@@ -75185,3 +75185,16 @@ Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
 
 ⏳ Waiting 300 seconds until next monitoring cycle...
 
+🔄 Running comprehensive solar-magnetic-seismic analysis...
+🔍 Performing comprehensive solar-magnetic-seismic analysis...
+🔍 Fetching magnetic field data from NOAA Solar Wind...
+☀️ Fetching solar flare data from NOAA...
+📊 Found 41 magnetic field readings
+❌ Error fetching solar flare data: TypeError: headers.forEach is not a function
+    at /Users/hendrix/eliza-starter/fulcanellie/dist/services/NOAAService.js:415:25
+    at Array.map (<anonymous>)
+    at NOAAService.fetchSolarFlareData (/Users/hendrix/eliza-starter/fulcanellie/dist/services/NOAAService.js:409:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 1)
+    at async NOAAService.performComprehensiveAnalysis (/Users/hendrix/eliza-starter/fulcanellie/dist/services/NOAAService.js:646:52)
+    at async NOAAService.checkMagneticFieldStatus (/Users/hendrix/eliza-starter/fulcanellie/dist/services/NOAAService.js:204:9)
