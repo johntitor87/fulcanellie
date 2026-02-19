@@ -59618,3 +59618,2523 @@ Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
 
 ⏳ Waiting 300 seconds until next monitoring cycle...
 
+
+=== FULCANELLIE MONITORING STATUS ===
+🌋 Earthquake monitoring: Active
+🧲 Magnetic field monitoring: Active
+🔮 Earthquake prediction: Active
+=======================================
+
+🔍 EARTHQUAKE MONITOR: Checking for seismic events...
+🔍 EARTHQUAKE MONITOR: Checking for new seismic events (independent of prediction system)...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 10347
+🔍 Found 813 earthquakes above magnitude 4 worldwide
+Latest earthquake: {
+  magnitude: 4.6,
+  location: '19 km W of Pýlos, Greece',
+  time: '2026-02-19T04:53:21.481Z'
+}
+📝 EARTHQUAKE MONITOR: Processing 813 earthquakes...
+📍 Regional threshold applied: Greece (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.6 in 19 km W of Pýlos, Greece, threshold: 5)
+📍 Regional threshold applied: Philippines (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.6 in 292 km SE of Pondaguitan, Philippines, threshold: 5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.1 in western Xizang, threshold: 5)
+📍 Regional threshold applied: Iran (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.4 in 36 km SW of Mohr, Iran, threshold: 5)
+📍 Regional threshold applied: Indonesia (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.6 in 258 km N of Tobelo, Indonesia, threshold: 5)
+📍 Regional threshold applied: Indonesia (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.5 in 244 km N of Tobelo, Indonesia, threshold: 5)
+📍 Regional threshold applied: California (3.8)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 4.7 - 29 km S of La Conquista, Nicaragua
+Magnitude: 4.7
+Location: 29 km S of La Conquista, Nicaragua
+Time: 2/18/2026, 7:00:09 PM (3.6 hours ago)
+📍 Regional threshold applied: California (3.8)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 4.7 earthquake 29 km S of La Conquista, Nicaragua
+Time: 2/18/2026, 7:00:09 PM (3 hours ago)
+Severity: MODERATE (regional significance)
+
+👁️ SEISMIC ACTIVITY DETECTED! Energy grid fluctuations observed...
+
+📍 Ley...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at 11.4685, -86.2297
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=11.4685%2C-86.2297&zoom=10&size=800x600&maptype=mapnik&markers=11.4685%2C-86.2297%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288611078985; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288611078985; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_O2wB+yy4E4KO/i/OCrcqsg=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288611078985; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': 'f4395f1e3bb96b2d',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079987',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '17'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079987,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: us6000sa3l
+📍 Regional threshold applied: Alaska (3.8)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 4.0 - 20 km W of Trapper Creek, Alaska
+Magnitude: 4
+Location: 20 km W of Trapper Creek, Alaska
+Time: 2/18/2026, 6:11:58 PM (4.4 hours ago)
+📍 Regional threshold applied: Alaska (3.8)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 4 earthquake 20 km W of Trapper Creek, Alaska
+Time: 2/18/2026, 6:11:58 PM (4 hours ago)
+Severity: MODERATE (regional significance)
+
+👁️ SEISMIC ACTIVITY DETECTED! Energy grid fluctuations observed...
+
+📍 Leyline...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at 62.293, -150.614
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=62.293%2C-150.614&zoom=10&size=800x600&maptype=mapnik&markers=62.293%2C-150.614%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288620263779; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288620263779; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_IpmOYDHrf44OS3Vcer+kCA=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288620263779; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': 'b5d3242b2b762f8e',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079986',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '15'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079986,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: aka2026dmcyvx
+📍 Regional threshold applied: Indonesia (5)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 5.5 - 136 km NW of Gorontalo, Indonesia
+Magnitude: 5.5
+Location: 136 km NW of Gorontalo, Indonesia
+Time: 2/18/2026, 4:26:14 PM (6.1 hours ago)
+📍 Regional threshold applied: Indonesia (5)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 5.5 earthquake 136 km NW of Gorontalo, Indonesia
+Time: 2/18/2026, 4:26:14 PM (6 hours ago)
+Severity: MODERATE (worldwide significance)
+
+🔍 MODERATE SEISMIC EVENT! Sacred geometry patterns emerging...
+
+📍 Leyline...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at 1.3709, 122.1572
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=1.3709%2C122.1572&zoom=9&size=800x600&maptype=mapnik&markers=1.3709%2C122.1572%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288629889858; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288629889858; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_1FWntR8MEfeqMmLxkAobmA=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288629889858; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': '0bcfd1f091a1aade',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079985',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '17'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079985,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: us6000sa2c
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.9 in 186 km SSW of Severo-Kuril’sk, Russia, threshold: 5)
+📍 Regional threshold applied: Japan (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.6 in 81 km E of Tomioka, Japan, threshold: 5)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 5.2 - central Mid-Atlantic Ridge
+Magnitude: 5.2
+Location: central Mid-Atlantic Ridge
+Time: 2/18/2026, 11:53:22 AM (10.7 hours ago)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 5.2 earthquake central Mid-Atlantic Ridge
+Time: 2/18/2026, 11:53:22 AM (10 hours ago)
+Severity: MODERATE (worldwide significance)
+
+🔍 MODERATE SEISMIC EVENT! Sacred geometry patterns emerging...
+
+📍 Leyline inte...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at 2.9484, -31.4602
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=2.9484%2C-31.4602&zoom=9&size=800x600&maptype=mapnik&markers=2.9484%2C-31.4602%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288642640399; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288642640399; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_C4IwVu13Q9SVHI0aBY3TEg=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288642640399; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': '26f3a17fe6d51392',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079984',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '15'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079984,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: us6000sa0y
+📍 Regional threshold applied: California (3.8)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 4.7 - 57 km SE of San Pedro de Atacama, Chile
+Magnitude: 4.7
+Location: 57 km SE of San Pedro de Atacama, Chile
+Time: 2/18/2026, 11:32:13 AM (11.0 hours ago)
+📍 Regional threshold applied: California (3.8)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 4.7 earthquake 57 km SE of San Pedro de Atacama, Chile
+Time: 2/18/2026, 11:32:13 AM (11 hours ago)
+Severity: MODERATE (regional significance)
+
+👁️ SEISMIC ACTIVITY DETECTED! Energy grid fluctuations observed...
+...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at -23.2936, -67.8274
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=-23.2936%2C-67.8274&zoom=10&size=800x600&maptype=mapnik&markers=-23.2936%2C-67.8274%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288651808398; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288651808398; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_6aC8HwIszuLAZq9iNTgpzQ=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288651808398; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': '58c072269ec75d0f',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079983',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '16'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079983,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: us6000sa0v
+📍 Regional threshold applied: Chile (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4 in 99 km S of La Tirana, Chile, threshold: 5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.5 in 115 km ESE of Petropavlovsk-Kamchatsky, Russia, threshold: 5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.6 in 9 km NNW of Barranco Adentro, Panama, threshold: 5)
+
+⚡ EARTHQUAKE MONITOR: New significant seismic event detected: M 5.1 - 151 km ESE of Labasa, Fiji
+Magnitude: 5.1
+Location: 151 km ESE of Labasa, Fiji
+Time: 2/17/2026, 11:57:31 PM (22.6 hours ago)
+
+📝 EARTHQUAKE ALERT: Formatted message:
+🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CONFIRMED SEISMIC EVENT ⚠️
+
+Magnitude 5.1 earthquake 151 km ESE of Labasa, Fiji
+Time: 2/17/2026, 11:57:31 PM (22 hours ago)
+Severity: MODERATE (worldwide significance)
+
+🔍 MODERATE SEISMIC EVENT! Sacred geometry patterns emerging...
+
+📍 Leyline inte...
+
+🗺️  EARTHQUAKE ALERT: Generating map visualization...
+🗺️  Generating map for earthquake at -16.707, -179.2454
+📥 Downloading map from: https://staticmap.openstreetmap.de/staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot
+❌ Failed to generate earthquake map: AxiosError: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+    at AxiosError.from (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:899:14)
+    at RedirectableRequest.handleRequestError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:3228:25)
+    at RedirectableRequest.emit (node:events:519:35)
+    at eventHandlers.<computed> (/Users/hendrix/eliza-starter/fulcanellie/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (/Users/hendrix/eliza-starter/fulcanellie/node_modules/axios/dist/node/axios.cjs:4317:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async EarthquakeVisualizationService.generateEarthquakeMap (/Users/hendrix/eliza-starter/fulcanellie/dist/services/EarthquakeVisualizationService.js:45:30)
+    at async FulcanellieBot.checkForEarthquakes (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:226:36)
+    at async FulcanellieBot.start (/Users/hendrix/eliza-starter/fulcanellie/dist/index.js:133:21) {
+  hostname: 'staticmap.openstreetmap.de',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 15000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.11.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    responseType: 'arraybuffer',
+    method: 'get',
+    url: 'https://staticmap.openstreetmap.de/staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      timeout: undefined,
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'staticmap.openstreetmap.de',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/staticmap.php',
+      search: '?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: staticmap.openstreetmap.de\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'staticmap.openstreetmap.de',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://staticmap.openstreetmap.de/staticmap.php?center=-16.707%2C-179.2454&zoom=9&size=800x600&maptype=mapnik&markers=-16.707%2C-179.2454%2Cred-dot',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'staticmap.openstreetmap.de'
+  }
+}
+Error details: getaddrinfo ENOTFOUND staticmap.openstreetmap.de
+
+🐦 EARTHQUAKE ALERT: Attempting to post to Twitter...
+🌋 EARTHQUAKE REPORT: Preparing to post actual earthquake report
+🌋 EARTHQUAKE REPORT: Sending to Twitter...
+📝 Posting tweet: "🌋 EARTHQUAKE REPORT 🌋
+
+⚠️ CO..."
+❌ Failed to post tweet: ApiResponseError: Request failed with code 429
+    at RequestHandlerHelper.createResponseError (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:104:16)
+    at RequestHandlerHelper.onResponseEndHandler (/Users/hendrix/eliza-starter/fulcanellie/node_modules/twitter-api-v2/dist/cjs/client-mixins/request-handler.helper.js:262:25)
+    at Gunzip.emit (node:events:507:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  error: true,
+  type: 'response',
+  code: 429,
+  headers: {
+    connection: 'keep-alive',
+    'content-length': '94',
+    perf: '7402827104',
+    server: 'envoy',
+    'set-cookie': [
+      'guest_id_marketing=v1%3A177148288661300618; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id_ads=v1%3A177148288661300618; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'personalization_id="v1_+evd2WiLdYO1rkwV29GsnQ=="; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None',
+      'guest_id=v1%3A177148288661300618; Max-Age=63072000; Expires=Sat, 19 Feb 2028 06:34:46 GMT; Path=/; Domain=.x.com; Secure; SameSite=None'
+    ],
+    'api-version': '2.158',
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-cache, no-store, max-age=0',
+    'x-access-level': 'read-write',
+    'x-frame-options': 'SAMEORIGIN',
+    'content-encoding': 'gzip',
+    'x-transaction-id': '38b1c5b7879a816c',
+    'x-xss-protection': '0',
+    'x-rate-limit-limit': '1080000',
+    'x-rate-limit-reset': '1771483182',
+    'content-disposition': 'attachment; filename=json.json',
+    'x-content-type-options': 'nosniff',
+    'x-rate-limit-remaining': '1079982',
+    'x-app-limit-24hour-limit': '17',
+    'x-app-limit-24hour-reset': '1771555815',
+    'x-user-limit-24hour-limit': '17',
+    'x-user-limit-24hour-reset': '1771555815',
+    'x-app-limit-24hour-remaining': '0',
+    'x-user-limit-24hour-remaining': '0',
+    'accept-ranges': 'bytes',
+    date: 'Thu, 19 Feb 2026 06:34:46 GMT',
+    via: '1.1 varnish',
+    'x-served-by': 't4_p, cache-bur-kbur8200067-BUR',
+    'x-cache': 'MISS',
+    'x-cache-hits': '0',
+    'strict-transport-security': 'max-age=300',
+    'x-response-time': '17'
+  },
+  rateLimit: {
+    limit: 1080000,
+    remaining: 1079982,
+    reset: 1771483182,
+    day: { limit: 17, remaining: 0, reset: 1771555815 }
+  },
+  data: {
+    title: 'Too Many Requests',
+    detail: 'Too Many Requests',
+    type: 'about:blank',
+    status: 429
+  }
+}
+
+⏰ RATE LIMIT EXCEEDED (429):
+  - The bot is posting too frequently
+  - Twitter API has usage limits
+
+📝 Solutions:
+  1. Increase CHECK_INTERVAL in your .env file (currently every 5 minutes)
+  2. Wait for rate limit to reset (usually 15 minutes)
+  3. Consider upgrading to Twitter API Pro if you need higher limits
+❌ EARTHQUAKE ALERT: Failed to post analysis for seismic event: us6000s9xy
+📍 Regional threshold applied: Japan (5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (magnitude 4.7 in 68 km N of Ishigaki, Japan, threshold: 5)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (114 km S of Koshima, Japan, magnitude 5) - too old (28.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km SSE of Atico, Peru, magnitude 4.2) - too old (28.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (183 km WSW of Tual, Indonesia, magnitude 5.2) - too old (28.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (101 km NNW of Port-Olry, Vanuatu, magnitude 5) - too old (29.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (62 km S of Corralero, Mexico, magnitude 4.8) - too old (30.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (53 km ESE of Adak, Alaska, magnitude 4) - too old (31.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (136 km SW of Adak, Alaska, magnitude 4.6) - too old (31.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (149 km SSE of Vilyuchinsk, Russia, magnitude 4.5) - too old (34.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km SSE of Modisi, Indonesia, magnitude 4.6) - too old (35.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (101 km S of Kawalu, Indonesia, magnitude 5) - too old (36.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (152 km W of Gorontalo, Indonesia, magnitude 4.5) - too old (37.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km NW of Livno, Bosnia and Herzegovina, magnitude 4.6) - too old (38.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (70 km NNE of Calama, Chile, magnitude 4.6) - too old (39.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.9) - too old (39.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km NNE of Jinghong, China, magnitude 4.7) - too old (39.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (north of Halmahera, Indonesia, magnitude 4.6) - too old (40.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (9 km W of Paucarbamba, Peru, magnitude 4.2) - too old (40.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (104 km E of Tual, Indonesia, magnitude 4.4) - too old (41.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (178 km NE of Lospalos, Timor Leste, magnitude 4.6) - too old (43.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (18 km ENE of Turgen, Kazakhstan, magnitude 4.5) - too old (44.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (145 km SSW of Severo-Kuril’sk, Russia, magnitude 4.5) - too old (46.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (138 km SSE of Honchō, Japan, magnitude 4.4) - too old (46.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (162 km SSE of Kuril’sk, Russia, magnitude 4.3) - too old (47.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5.5) - too old (51.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (21 km NNW of Ajigasawa, Japan, magnitude 4.5) - too old (52.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (24 km SW of Ovalle, Chile, magnitude 4.2) - too old (53.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (115 km E of Tual, Indonesia, magnitude 5.1) - too old (54.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (16 km E of Levídion, Greece, magnitude 4.6) - too old (55.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (99 km W of Yenangyaung, Burma (Myanmar), magnitude 4.4) - too old (55.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km E of La Tirana, Chile, magnitude 4.2) - too old (56.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km ESE of Ozernovskiy, Russia, magnitude 6) - too old (56.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km NNW of Calama, Chile, magnitude 5) - too old (57.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (114 km SSE of Lata, Solomon Islands, magnitude 5.7) - too old (59.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km ESE of Yilan, Taiwan, magnitude 4.2) - too old (60.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km ENE of Hachinohe, Japan, magnitude 4.5) - too old (60.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southern Mid-Atlantic Ridge, magnitude 5.5) - too old (61.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5.7) - too old (63.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SW of Mohr, Iran, magnitude 4.1) - too old (65.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (22 km W of Dompu, Indonesia, magnitude 4.9) - too old (66.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km SW of Ovalle, Chile, magnitude 4.8) - too old (69.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km WNW of Raumati Beach, New Zealand, magnitude 4.6) - too old (70.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (70 km NNE of Lae, Papua New Guinea, magnitude 4.6) - too old (71.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (195 km W of Riverton, New Zealand, magnitude 4.4) - too old (71.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (138 km NNW of Tumxuk, China, magnitude 4.6) - too old (71.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (97 km WNW of Pariaman, Indonesia, magnitude 5) - too old (72.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (51 km ENE of Noda, Japan, magnitude 4.6) - too old (73.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southern East Pacific Rise, magnitude 5.1) - too old (74.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 5.2) - too old (75.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (18 km WSW of Calongbuyan, Philippines, magnitude 4.8) - too old (77.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km SW of San Alejandro, Peru, magnitude 4.7) - too old (77.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (196 km S of Nikolski, Alaska, magnitude 4) - too old (78.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SW of Turrillas, Spain, magnitude 4.2) - too old (78.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (69 km SE of Ambunti, Papua New Guinea, magnitude 4.5) - too old (79.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (198 km S of Nikolski, Alaska, magnitude 4.1) - too old (79.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (192 km S of Nikolski, Alaska, magnitude 4.1) - too old (79.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (106 km NNE of Hihifo, Tonga, magnitude 5.3) - too old (81.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (22 km N of Metahāra, Ethiopia, magnitude 4.6) - too old (82.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (188 km S of Nikolski, Alaska, magnitude 4.3) - too old (84.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (284 km SSW of Severo-Kuril’sk, Russia, magnitude 6) - too old (86.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (266 km SSW of Tambolaka, Indonesia, magnitude 4.9) - too old (88.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km S of Abepura, Indonesia, magnitude 4.4) - too old (89.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (177 km SSE of Vilyuchinsk, Russia, magnitude 4.7) - too old (90.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (65 km W of Ollagüe, Chile, magnitude 4.6) - too old (92.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (167 km SSE of Vilyuchinsk, Russia, magnitude 4.1) - too old (92.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (78 km W of Pedernales, Ecuador, magnitude 4.2) - too old (93.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (54 km SSE of Palca, Peru, magnitude 4.2) - too old (93.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (264 km N of Tobelo, Indonesia, magnitude 4.6) - too old (95.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (62 km SSE of Bengkulu, Indonesia, magnitude 5) - too old (96.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km ENE of Yura, Peru, magnitude 5) - too old (96.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (74 km SW of Ollagüe, Chile, magnitude 4.3) - too old (97.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (1 km ESE of Ashikaga, Japan, magnitude 4.1) - too old (99.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km ESE of Farkhār, Afghanistan, magnitude 4.3) - too old (103.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (5 km NW of Néon Monastírion, Greece, magnitude 4.4) - too old (105.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (162 km SSW of Severo-Kuril’sk, Russia, magnitude 4.5) - too old (105.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (121 km SE of Modisi, Indonesia, magnitude 4.3) - too old (105.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (292 km N of Tobelo, Indonesia, magnitude 4.5) - too old (107.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.3) - too old (107.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (West Chile Rise, magnitude 5) - too old (108.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (129 km SE of Pondaguitan, Philippines, magnitude 5.2) - too old (109.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.6) - too old (111.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.6) - too old (111.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km NNW of Ambon, Indonesia, magnitude 4.8) - too old (112.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (143 km SE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.6) - too old (112.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (90 km WSW of Abepura, Indonesia, magnitude 4.9) - too old (114.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km E of Aratoca, Colombia, magnitude 4.3) - too old (115.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (172 km ENE of Tual, Indonesia, magnitude 4.7) - too old (116.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km SW of False Pass, Alaska, magnitude 4.5) - too old (117.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (284 km WSW of Cochrane, Chile, magnitude 4.7) - too old (118.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (99 km NW of Mikuni, Japan, magnitude 4.1) - too old (118.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Rat Islands, Aleutian Islands, Alaska, magnitude 5) - too old (119.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (55 km NW of San Antonio de los Cobres, Argentina, magnitude 4.4) - too old (120.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (41 km SE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.6) - too old (121.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (218 km SW of George Town, Cayman Islands, magnitude 4.3) - too old (122.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (82 km NNE of Ollagüe, Chile, magnitude 4.4) - too old (122.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km WNW of Malango, Solomon Islands, magnitude 5.1) - too old (123.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (88 km NNW of Ambon, Indonesia, magnitude 4.8) - too old (123.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (53 km WNW of Port-Olry, Vanuatu, magnitude 6.4) - too old (124.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (185 km SE of Sarangani, Philippines, magnitude 4.8) - too old (125.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (265 km N of Tobelo, Indonesia, magnitude 4.5) - too old (126.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (269 km NNE of Lospalos, Timor Leste, magnitude 4.1) - too old (126.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (198 km SE of Sarangani, Philippines, magnitude 4.4) - too old (128.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SE of Cortes de la Frontera, Spain, magnitude 4) - too old (129.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (255 km N of Tobelo, Indonesia, magnitude 4.6) - too old (130.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (31 km SW of Mohr, Iran, magnitude 4.6) - too old (130.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km WSW of Mohr, Iran, magnitude 4.4) - too old (130.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km S of Ḩājjīābād, Iran, magnitude 4.3) - too old (131.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (114 km SE of Angoram, Papua New Guinea, magnitude 4.9) - too old (131.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (282 km N of Tobelo, Indonesia, magnitude 4.5) - too old (131.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (280 km N of Tobelo, Indonesia, magnitude 4.7) - too old (132.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (256 km E of Levuka, Fiji, magnitude 4.4) - too old (133.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (124 km SSE of Kūh Sefīd, Iran, magnitude 4.6) - too old (134.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (259 km N of Tobelo, Indonesia, magnitude 4.9) - too old (134.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (275 km N of Tobelo, Indonesia, magnitude 4.9) - too old (135.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (277 km N of Tobelo, Indonesia, magnitude 5.6) - too old (135.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (231 km E of Levuka, Fiji, magnitude 4.5) - too old (136.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km W of Teshio, Japan, magnitude 4.4) - too old (136.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (79 km E of Pondaguitan, Philippines, magnitude 4.6) - too old (137.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km SSW of Calatagan, Philippines, magnitude 4.6) - too old (138.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (165 km SE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.4) - too old (138.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km W of El Cairo, Colombia, magnitude 4.9) - too old (138.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km WSW of Mohr, Iran, magnitude 4.9) - too old (139.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km W of Mohr, Iran, magnitude 4.5) - too old (140.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (274 km N of Tobelo, Indonesia, magnitude 4.4) - too old (140.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (79 km NE of Khuzdar, Pakistan, magnitude 5.5) - too old (144.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km SSW of Corralero, Mexico, magnitude 4.8) - too old (144.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km NE of Maki, Japan, magnitude 4.8) - too old (145.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (142 km SSE of Kuril’sk, Russia, magnitude 4.6) - too old (145.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km E of Nikolski, Alaska, magnitude 4.1) - too old (147.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (179 km SSE of Kuril’sk, Russia, magnitude 4.9) - too old (148.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (290 km WSW of Tual, Indonesia, magnitude 4.3) - too old (148.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km WSW of Ovalle, Chile, magnitude 4.3) - too old (149.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (85 km NE of Hihifo, Tonga, magnitude 5) - too old (149.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (133 km SSE of Kuqa, China, magnitude 4.3) - too old (151.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km SW of Khulm, Afghanistan, magnitude 4.5) - too old (152.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km ESE of Macas, Ecuador, magnitude 4.6) - too old (152.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (97 km SE of Katsuren-haebaru, Japan, magnitude 5.5) - too old (152.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (159 km SSE of Kuril’sk, Russia, magnitude 5) - too old (153.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (124 km NE of Kuji, Japan, magnitude 4.6) - too old (153.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (195 km SSE of Katsuura, Japan, magnitude 4.6) - too old (154.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km N of Zapotitlán Lagunas, Mexico, magnitude 4.4) - too old (156.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (140 km SE of Kuqa, China, magnitude 4.4) - too old (156.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (71 km W of El Aguilar, Argentina, magnitude 4.5) - too old (157.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (157 km SSE of Kuril’sk, Russia, magnitude 5.4) - too old (157.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (81 km SW of Basco, Philippines, magnitude 4.8) - too old (160.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (275 km E of Levuka, Fiji, magnitude 5.1) - too old (160.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km SW of Ovalle, Chile, magnitude 6.2) - too old (161.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (55 km W of Meulaboh, Indonesia, magnitude 4.7) - too old (161.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km NNW of Yigo Village, Guam, magnitude 5.4) - too old (164.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (33 km NW of Ancud, Chile, magnitude 4.1) - too old (170.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km SW of Adak, Alaska, magnitude 4) - too old (173.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km SW of Mohr, Iran, magnitude 4.4) - too old (174.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (69 km NW of San Antonio de los Cobres, Argentina, magnitude 4.2) - too old (175.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (179 km SSW of Hengchun, Taiwan, magnitude 5.3) - too old (176.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km N of Rustāq, Afghanistan, magnitude 4.3) - too old (178.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (160 km ENE of Tual, Indonesia, magnitude 4.7) - too old (180.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (81 km NE of Shikotan, Russia, magnitude 5.1) - too old (180.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (82 km E of Kokopo, Papua New Guinea, magnitude 5.1) - too old (180.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km ENE of Mutsu, Japan, magnitude 4.9) - too old (181.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (east of the Kuril Islands, magnitude 4.9) - too old (182.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (97 km W of El Aguilar, Argentina, magnitude 4.6) - too old (183.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (173 km S of Gizo, Solomon Islands, magnitude 4.6) - too old (185.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (56 km NNE of Kon Tum, Vietnam, magnitude 4.3) - too old (186.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (51 km N of Kandrian, Papua New Guinea, magnitude 4.6) - too old (187.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (133 km W of Adak, Alaska, magnitude 4) - too old (187.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km NW of Delta, B.C., MX, magnitude 4.18) - too old (189.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km NE of 28 de Noviembre, Argentina, magnitude 4.7) - too old (190.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (250 km SE of Okhotsk, Russia, magnitude 5.6) - too old (192.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (55 km W of San Antonio de los Cobres, Argentina, magnitude 4.3) - too old (192.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km W of Jordán, Colombia, magnitude 4.8) - too old (192.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (201 km ESE of Ozernovskiy, Russia, magnitude 4.7) - too old (194.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (275 km W of Houma, Tonga, magnitude 4.6) - too old (195.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (70 km NE of Adak, Alaska, magnitude 5) - too old (199.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (142 km NE of Hihifo, Tonga, magnitude 5.6) - too old (201.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km ESE of Prizren, Kosovo, magnitude 4.5) - too old (201.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (106 km WSW of Pole Ojea, Puerto Rico, magnitude 4.67) - too old (201.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 6.2) - too old (201.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km NNW of Meadow Lakes, Alaska, magnitude 4.6) - too old (201.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (37 km SE of Luganville, Vanuatu, magnitude 4.9) - too old (202.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (267 km E of Hasaki, Japan, magnitude 4.9) - too old (203.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.3) - too old (204.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (187 km ENE of Lospalos, Timor Leste, magnitude 4.4) - too old (205.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.3) - too old (206.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of Panama, magnitude 4.6) - too old (207.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Tristan da Cunha region, magnitude 5.4) - too old (208.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (62 km ENE of Severo-Kuril’sk, Russia, magnitude 4.4) - too old (211.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (140 km SE of Vilyuchinsk, Russia, magnitude 5.1) - too old (212.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (84 km ENE of Manchioneal, Jamaica, magnitude 5) - too old (214.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km SE of Londres, Argentina, magnitude 4.5) - too old (217.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km WSW of Palaióchora, Greece, magnitude 4.3) - too old (217.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (54 km SE of Emporeío, Greece, magnitude 4) - too old (218.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (152 km SW of Adak, Alaska, magnitude 4.1) - too old (220.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km NE of Khorugh, Tajikistan, magnitude 4.2) - too old (220.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SW of Rayevskaya, Russia, magnitude 4.8) - too old (223.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.6) - too old (223.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (129 km ENE of Santa Cruz das Flores, Portugal, magnitude 5.1) - too old (224.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (100 km E of Yamada, Japan, magnitude 4.3) - too old (227.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km ESE of Hihifo, Tonga, magnitude 5) - too old (227.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (262 km SW of Severo-Kuril’sk, Russia, magnitude 4.5) - too old (230.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Carlsberg Ridge, magnitude 5) - too old (230.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km NNE of Cruz Bay, U.S. Virgin Islands, magnitude 4) - too old (231.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km NNE of Cruz Bay, U.S. Virgin Islands, magnitude 4.39) - too old (233.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km NNE of Cruz Bay, U.S. Virgin Islands, magnitude 4.12) - too old (236.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (149 km WNW of Tobelo, Indonesia, magnitude 5) - too old (238.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (150 km WSW of Merizo Village, Guam, magnitude 4.5) - too old (239.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (108 km SSE of Ust’-Kamchatsk Staryy, Russia, magnitude 4.6) - too old (240.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (196 km SW of Nikolski, Alaska, magnitude 4) - too old (241.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (194 km SSE of Vilyuchinsk, Russia, magnitude 5.3) - too old (241.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (274 km NW of Houma, Tonga, magnitude 4.4) - too old (243.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km ESE of Calama, Chile, magnitude 4.2) - too old (247.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km NNE of Shizunai-furukawachō, Japan, magnitude 4.7) - too old (248.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km S of San Miguel Coatlán, Mexico, magnitude 5.7) - too old (248.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (26 km WSW of Ashkāsham, Afghanistan, magnitude 4.2) - too old (250.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (281 km ESE of Sarangani, Philippines, magnitude 4.4) - too old (251.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km S of Shikotan, Russia, magnitude 4.6) - too old (253.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (76 km ENE of La Tirana, Chile, magnitude 5.7) - too old (254.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (102 km SW of Arenas, Panama, magnitude 4.6) - too old (254.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (76 km NE of Finschhafen, Papua New Guinea, magnitude 4.9) - too old (255.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km SSW of Maisí, Cuba, magnitude 5.5) - too old (258.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kepulauan Babar, Indonesia, magnitude 4.5) - too old (260.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km WSW of Ollagüe, Chile, magnitude 4.2) - too old (263.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (58 km SSE of Kangding, China, magnitude 4.7) - too old (264.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km WNW of Houma, Tonga, magnitude 4.5) - too old (265.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.3) - too old (267.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (222 km NNW of Maintirano, Madagascar, magnitude 4.7) - too old (268.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km ESE of Takahagi, Japan, magnitude 4.9) - too old (268.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (65 km SW of Masachapa, Nicaragua, magnitude 4.4) - too old (269.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (202 km WNW of Panguna, Papua New Guinea, magnitude 4.5) - too old (269.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km WSW of Tungor, Russia, magnitude 4.8) - too old (270.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (85 km WSW of Ternate, Indonesia, magnitude 4.7) - too old (271.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km WSW of Kíssamos, Greece, magnitude 4.9) - too old (272.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (116 km SE of António Enes, Mozambique, magnitude 4.8) - too old (273.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (169 km E of Petropavlovsk-Kamchatsky, Russia, magnitude 4.6) - too old (274.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.2) - too old (275.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km NW of Gyalshing, India, magnitude 4.6) - too old (281.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (off the coast of Central America, magnitude 4.6) - too old (281.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km ENE of Ilabaya, Peru, magnitude 4.4) - too old (282.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (off the coast of Central America, magnitude 5) - too old (282.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Prince Edward Islands region, magnitude 5.2) - too old (283.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Rat Islands, Aleutian Islands, Alaska, magnitude 4.1) - too old (288.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (162 km ESE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.4) - too old (292.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Pulau Pulau Tanimbar, Indonesia, magnitude 5.9) - too old (297.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (131 km ENE of Tobelo, Indonesia, magnitude 4.3) - too old (299.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (18 km ESE of Ierápetra, Greece, magnitude 4.3) - too old (300.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (229 km ESE of Kamaishi, Japan, magnitude 4.5) - too old (300.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (266 km ESE of Ozernovskiy, Russia, magnitude 4.8) - too old (302.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (0 km NE of Shiraoka, Japan, magnitude 4.7) - too old (302.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km S of Refahiye, Turkey, magnitude 4.8) - too old (307.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km S of Vilyuchinsk, Russia, magnitude 4.6) - too old (308.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km W of San Antonio de los Cobres, Argentina, magnitude 4.2) - too old (310.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.8) - too old (310.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (100 km ENE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.6) - too old (312.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km S of Kýthira, Greece, magnitude 4.3) - too old (313.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (81 km E of Petropavlovsk-Kamchatsky, Russia, magnitude 5.1) - too old (314.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (56 km WSW of Vinchina, Argentina, magnitude 4.9) - too old (314.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km S of La Tirana, Chile, magnitude 4.4) - too old (315.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (98 km SE of Severo-Kuril’sk, Russia, magnitude 4.6) - too old (316.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km S of La Tirana, Chile, magnitude 5) - too old (316.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (10 km NW of Huoshilafu, China, magnitude 4.5) - too old (316.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (104 km SSW of Kýthira, Greece, magnitude 4) - too old (317.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (57 km ESE of Mawlaik, Burma (Myanmar), magnitude 5.2) - too old (318.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.6) - too old (318.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (western Xizang, magnitude 4.3) - too old (321.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km NW of Naya Bāzār, India, magnitude 4.4) - too old (321.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km WNW of Gyalshing, India, magnitude 4.6) - too old (322.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Rat Islands, Aleutian Islands, Alaska, magnitude 4) - too old (323.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km W of Litayan, Philippines, magnitude 4.3) - too old (324.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (5 km S of Dinagat, Philippines, magnitude 5) - too old (324.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km ESE of Farkhār, Afghanistan, magnitude 4.2) - too old (324.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (94 km SW of Trenggalek, Indonesia, magnitude 5.8) - too old (324.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (54 km W of San Antonio de los Cobres, Argentina, magnitude 4.6) - too old (325.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (235 km E of Levuka, Fiji, magnitude 4.7) - too old (326.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (208 km ENE of Lospalos, Timor Leste, magnitude 4.5) - too old (327.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (143 km E of Kimbe, Papua New Guinea, magnitude 4.4) - too old (329.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km W of Petrolia, CA, magnitude 4.68) - too old (329.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km NNE of Francisco I. Madero, Mexico, magnitude 4.3) - too old (332.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (71 km N of Tocopilla, Chile, magnitude 4.2) - too old (333.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km NNW of Zharkent, Kazakhstan, magnitude 4.7) - too old (333.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (141 km E of Madang, Papua New Guinea, magnitude 4.8) - too old (335.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km SSE of La Libertad, El Salvador, magnitude 4.3) - too old (336.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (28 km SSW of Sangay, Philippines, magnitude 4.2) - too old (338.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km WSW of Ollagüe, Chile, magnitude 4.1) - too old (339.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (25 km SW of Urakawa, Japan, magnitude 4.2) - too old (340.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (159 km SW of Houma, Tonga, magnitude 4.6) - too old (342.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SSE of Narutō, Japan, magnitude 4.6) - too old (342.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km E of Maliq, Albania, magnitude 4) - too old (344.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SW of San Carlos Sija, Guatemala, magnitude 4.3) - too old (344.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km SW of Sangay, Philippines, magnitude 4.5) - too old (345.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (235 km ENE of Lospalos, Timor Leste, magnitude 4.2) - too old (345.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km NW of Bilisht, Albania, magnitude 4.1) - too old (347.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (125 km SE of Phek, India, magnitude 4.5) - too old (347.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (106 km NE of Tatsugō, Japan, magnitude 5.5) - too old (348.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km SW of Mohr, Iran, magnitude 4.7) - too old (349.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (167 km NNW of Pante Makasar, Timor Leste, magnitude 4.1) - too old (349.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km NNW of Beluga, Alaska, magnitude 4.4) - too old (351.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SSE of Recodo, Philippines, magnitude 4.7) - too old (353.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Galapagos Islands, Ecuador region, magnitude 4.9) - too old (355.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 6.1) - too old (355.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km N of Calama, Chile, magnitude 4.8) - too old (358.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (31 km ENE of Cortes, Philippines, magnitude 4.9) - too old (359.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (190 km ESE of Severo-Kuril’sk, Russia, magnitude 4.7) - too old (359.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (western Xizang, magnitude 4.9) - too old (360.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Rat Islands, Aleutian Islands, Alaska, magnitude 4.1) - too old (360.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (262 km WSW of Houma, Tonga, magnitude 4.9) - too old (361.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km SW of Kimbe, Papua New Guinea, magnitude 5.1) - too old (362.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 5.3) - too old (364.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (153 km SSW of Tual, Indonesia, magnitude 5.1) - too old (366.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Antarctica, magnitude 4.9) - too old (366.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (73 km SSE of Vilyuchinsk, Russia, magnitude 4.8) - too old (366.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands region, magnitude 4.4) - too old (366.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km SE of Witherlea, New Zealand, magnitude 4.3) - too old (367.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (129 km E of Kokopo, Papua New Guinea, magnitude 4.5) - too old (368.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (221 km WSW of Severo-Kuril’sk, Russia, magnitude 4.2) - too old (368.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (87 km ENE of Kainantu, Papua New Guinea, magnitude 4.6) - too old (369.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (101 km NE of Hihifo, Tonga, magnitude 5.2) - too old (371.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km NW of Finschhafen, Papua New Guinea, magnitude 5.2) - too old (371.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km E of Hasaki, Japan, magnitude 4.5) - too old (372.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (69 km SW of Calama, Chile, magnitude 4.5) - too old (373.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (89 km W of Yenangyaung, Burma (Myanmar), magnitude 5.1) - too old (374.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (western Indian-Antarctic Ridge, magnitude 5.1) - too old (374.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (97 km W of Yenangyaung, Burma (Myanmar), magnitude 5.8) - too old (375.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (277 km S of Severo-Kuril’sk, Russia, magnitude 4.7) - too old (378.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (22 km E of Kitaibaraki, Japan, magnitude 5) - too old (381.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 5.2) - too old (387.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (10 km NNE of Santa Lucía, Peru, magnitude 4.4) - too old (388.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (52 km W of Ust’-Kamchatsk Staryy, Russia, magnitude 5) - too old (390.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (57 km SSE of La Tirana, Chile, magnitude 4.3) - too old (390.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km E of Calingasta, Argentina, magnitude 4) - too old (391.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (215 km SE of Vilyuchinsk, Russia, magnitude 4.2) - too old (391.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (122 km SE of Onagawa Chō, Japan, magnitude 4.6) - too old (392.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (179 km SSW of Severo-Kuril’sk, Russia, magnitude 4.3) - too old (392.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (295 km WNW of Houma, Tonga, magnitude 4.4) - too old (393.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km NE of Labuan Lombok, Indonesia, magnitude 4.5) - too old (395.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 4.6) - too old (395.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (75 km SE of Gizo, Solomon Islands, magnitude 4.6) - too old (397.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SE of San Ramon, CA, magnitude 4.18) - too old (399.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (16 km NE of Los Andes, Chile, magnitude 4.4) - too old (400.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km NNW of Mysovoe, Ukraine, magnitude 4.8) - too old (404.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (196 km W of Riverton, New Zealand, magnitude 5.3) - too old (406.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (120 km S of Vilyuchinsk, Russia, magnitude 4.5) - too old (409.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km W of Ntungamo, Uganda, magnitude 4.5) - too old (411.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km WNW of San Antonio de los Cobres, Argentina, magnitude 4) - too old (411.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Izu Islands, Japan region, magnitude 4.4) - too old (413.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (western Indian-Antarctic Ridge, magnitude 4.7) - too old (413.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km ESE of Puerto Cortés, Costa Rica, magnitude 4.5) - too old (413.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km SSW of Soyībug, India, magnitude 4.8) - too old (414.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km NW of Monywa, Burma (Myanmar), magnitude 4.4) - too old (414.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (79 km WSW of Padang, Indonesia, magnitude 4.5) - too old (416.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (128 km SE of Kimbe, Papua New Guinea, magnitude 4.9) - too old (416.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (223 km NW of Sabang, Indonesia, magnitude 4.5) - too old (416.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km E of Jalālābād, Afghanistan, magnitude 4.4) - too old (419.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 4.8) - too old (419.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.7) - too old (420.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (50 km NE of Khorugh, Tajikistan, magnitude 4.6) - too old (420.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (42 km NW of Swan Hills, Canada, magnitude 4.3) - too old (420.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (97 km W of San Antonio de los Cobres, Argentina, magnitude 4.5) - too old (422.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km E of Adak, Alaska, magnitude 5.1) - too old (425.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (64 km SSE of Lata, Solomon Islands, magnitude 4.9) - too old (429.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.4) - too old (429.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km NE of Santa Monica, Philippines, magnitude 4.2) - too old (429.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (41 km WSW of Sangay, Philippines, magnitude 4.6) - too old (431.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (central East Pacific Rise, magnitude 5) - too old (431.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (33 km WSW of Ḩājjīābād, Iran, magnitude 4) - too old (432.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (25 km WSW of Mohr, Iran, magnitude 5.3) - too old (433.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (74 km WSW of Calingasta, Argentina, magnitude 4.4) - too old (439.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (159 km W of Valparaíso, Chile, magnitude 4.4) - too old (439.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (251 km WSW of Tual, Indonesia, magnitude 4.7) - too old (441.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km ENE of ‘Ohonua, Tonga, magnitude 5.8) - too old (441.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (110 km SE of Kuril’sk, Russia, magnitude 4.9) - too old (441.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.3) - too old (442.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Prince Edward Islands region, magnitude 5.2) - too old (443.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km W of Gadung, Philippines, magnitude 4.8) - too old (444.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (224 km NE of Lospalos, Timor Leste, magnitude 4.6) - too old (445.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (267 km WNW of Houma, Tonga, magnitude 4.4) - too old (446.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (81 km ENE of Petropavlovsk-Kamchatsky, Russia, magnitude 4.6) - too old (446.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (176 km SE of Vilyuchinsk, Russia, magnitude 4.5) - too old (449.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Maug Islands region, Northern Mariana Islands, magnitude 4.2) - too old (450.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km SW of Sangay, Philippines, magnitude 4.1) - too old (450.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (114 km S of Akureyri, Iceland, magnitude 5.3) - too old (450.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (9 km W of Port-Olry, Vanuatu, magnitude 4.3) - too old (451.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Bonin Islands, Japan region, magnitude 4.8) - too old (452.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (off the coast of Central America, magnitude 4.7) - too old (452.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km ENE of San Pedro Huamelula, Mexico, magnitude 4.6) - too old (452.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5) - too old (456.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.6) - too old (457.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km W of Ollagüe, Chile, magnitude 4.2) - too old (457.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (50 km SSE of San Juan, Peru, magnitude 4.9) - too old (461.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (283 km SSE of Amahai, Indonesia, magnitude 4.7) - too old (461.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (228 km NNW of Manado, Indonesia, magnitude 4.8) - too old (462.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (212 km SE of Pondaguitan, Philippines, magnitude 4.3) - too old (462.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (33 km N of Lahat, Indonesia, magnitude 4.9) - too old (463.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (261 km ESE of Batagay, Russia, magnitude 4.7) - too old (463.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (33 km WSW of Hengchun, Taiwan, magnitude 4.2) - too old (463.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (48 km SW of Cantwell, Alaska, magnitude 4.3) - too old (465.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (51 km W of Gunungsitoli, Indonesia, magnitude 4.9) - too old (465.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km ENE of Ōarai, Japan, magnitude 4.4) - too old (467.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (18 km NE of Anamizu, Japan, magnitude 4.2) - too old (469.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (130 km S of Severo-Kuril’sk, Russia, magnitude 4.7) - too old (472.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands region, magnitude 5) - too old (474.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km ENE of Miyako, Japan, magnitude 4.6) - too old (475.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (74 km NNW of Baiyin, China, magnitude 4) - too old (479.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (131 km ENE of Maumere, Indonesia, magnitude 4.1) - too old (480.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km E of Kalian, Philippines, magnitude 4.5) - too old (480.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (185 km SSW of Merizo Village, Guam, magnitude 4.7) - too old (482.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southern East Pacific Rise, magnitude 5.4) - too old (484.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 5.2) - too old (485.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (80 km S of Modisi, Indonesia, magnitude 5) - too old (485.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km W of Sangay, Philippines, magnitude 5.1) - too old (485.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km W of Bantogon, Philippines, magnitude 4.9) - too old (487.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km WSW of Bantogon, Philippines, magnitude 4.6) - too old (488.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (77 km E of Nabire, Indonesia, magnitude 4) - too old (488.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km SSE of Crucecita, Mexico, magnitude 4.6) - too old (488.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.5) - too old (488.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (135 km SW of Kokopo, Papua New Guinea, magnitude 4.4) - too old (488.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (198 km WNW of Panguna, Papua New Guinea, magnitude 5) - too old (490.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.6) - too old (490.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (10 km NE of Black Eagle, Montana, magnitude 4.2) - too old (490.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km SE of Parapótamos, Greece, magnitude 4.1) - too old (490.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km NNW of Aitape, Papua New Guinea, magnitude 4.4) - too old (493.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km SSW of Urakawa, Japan, magnitude 4.5) - too old (496.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km W of Finschhafen, Papua New Guinea, magnitude 4.8) - too old (502.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (67 km SW of San Juan, Peru, magnitude 4.7) - too old (502.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 6) - too old (503.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Off the coast of Aisen, Chile, magnitude 4.4) - too old (503.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.5) - too old (504.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km NE of Finschhafen, Papua New Guinea, magnitude 4.3) - too old (504.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SSE of Tateyama, Japan, magnitude 4.6) - too old (507.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (1 km S of Wada, Japan, magnitude 4.6) - too old (509.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.5) - too old (509.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (52 km WSW of Sangay, Philippines, magnitude 4.5) - too old (510.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (58 km WSW of Palimbang, Philippines, magnitude 4.2) - too old (510.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km WSW of Sangay, Philippines, magnitude 5) - too old (510.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (88 km SW of Kokopo, Papua New Guinea, magnitude 4.6) - too old (512.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Galapagos Triple Junction region, magnitude 5.2) - too old (512.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km NNE of Gorontalo, Indonesia, magnitude 4.5) - too old (512.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (east of the Kuril Islands, magnitude 4.4) - too old (513.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (192 km SSE of Vilyuchinsk, Russia, magnitude 4.4) - too old (514.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (156 km WNW of Tobelo, Indonesia, magnitude 4.1) - too old (514.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (28 km SW of Sangay, Philippines, magnitude 4.4) - too old (514.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (110 km NNE of Gorontalo, Indonesia, magnitude 4.7) - too old (515.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km WSW of Dompu, Indonesia, magnitude 5.1) - too old (516.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km W of San Antonio de los Cobres, Argentina, magnitude 4.1) - too old (516.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (55 km SW of San Antonio, Chile, magnitude 4) - too old (517.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Pulau Pulau Tanimbar, Indonesia, magnitude 5) - too old (517.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km WSW of Bantogon, Philippines, magnitude 5) - too old (518.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (51 km W of Sangay, Philippines, magnitude 4.2) - too old (519.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km WSW of Sangay, Philippines, magnitude 4.4) - too old (519.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (59 km SE of Mohr, Iran, magnitude 4.2) - too old (519.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km NW of Sape, Indonesia, magnitude 4.2) - too old (519.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Pagan region, Northern Mariana Islands, magnitude 4.8) - too old (519.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (21 km W of Bantogon, Philippines, magnitude 4.6) - too old (519.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (25 km W of Sangay, Philippines, magnitude 4.9) - too old (520.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (31 km WSW of Bantogon, Philippines, magnitude 4.7) - too old (520.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km SW of Sangay, Philippines, magnitude 4.6) - too old (521.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km NNE of Hihifo, Tonga, magnitude 4.4) - too old (521.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (36 km WSW of Bantogon, Philippines, magnitude 4.5) - too old (521.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (170 km SW of Banda Aceh, Indonesia, magnitude 4.2) - too old (522.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (49 km WSW of Sangay, Philippines, magnitude 4.3) - too old (522.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5) - too old (523.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km E of Noda, Japan, magnitude 5.1) - too old (523.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km WSW of Sangay, Philippines, magnitude 4.4) - too old (524.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands region, magnitude 4.4) - too old (524.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km W of Sangay, Philippines, magnitude 4.7) - too old (525.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km W of Bantogon, Philippines, magnitude 4.9) - too old (525.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (194 km SSE of Vilyuchinsk, Russia, magnitude 5.2) - too old (525.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (36 km WSW of Sangay, Philippines, magnitude 4.3) - too old (525.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (15 km W of Bantogon, Philippines, magnitude 5.1) - too old (525.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km W of Bantogon, Philippines, magnitude 5.6) - too old (525.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km W of Sangay, Philippines, magnitude 5.3) - too old (526.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km W of Bantogon, Philippines, magnitude 5.4) - too old (526.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (172 km SE of Vilyuchinsk, Russia, magnitude 5.1) - too old (526.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km WSW of Sangay, Philippines, magnitude 4.4) - too old (526.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (190 km SSE of Vilyuchinsk, Russia, magnitude 5) - too old (526.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km WSW of Bantogon, Philippines, magnitude 4.6) - too old (526.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km WSW of Sangay, Philippines, magnitude 4.4) - too old (527.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (53 km W of Bantogon, Philippines, magnitude 5) - too old (527.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km W of Sangay, Philippines, magnitude 5.9) - too old (527.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km ENE of Esashi, Japan, magnitude 4.5) - too old (528.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km W of Sangay, Philippines, magnitude 5.1) - too old (528.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (77 km NE of Loreto, Mexico, magnitude 4) - too old (528.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km SW of Sangay, Philippines, magnitude 4.7) - too old (529.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (62 km ENE of Finschhafen, Papua New Guinea, magnitude 4.9) - too old (529.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (24 km ESE of Orillia, Canada, magnitude 4.1) - too old (530.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km WSW of Sangay, Philippines, magnitude 4.9) - too old (531.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Bonin Islands, Japan region, magnitude 4.6) - too old (531.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (59 km WSW of Sangay, Philippines, magnitude 4.7) - too old (531.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (15 km WNW of Bantogon, Philippines, magnitude 5.1) - too old (531.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km W of Sangay, Philippines, magnitude 4.5) - too old (531.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Ascension Island region, magnitude 5.2) - too old (531.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (106 km WNW of Neiafu, Tonga, magnitude 4.1) - too old (531.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km WSW of Sangay, Philippines, magnitude 4.4) - too old (532.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Ascension Island region, magnitude 4.8) - too old (532.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Ascension Island region, magnitude 5.4) - too old (532.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km WNW of Hamatonbetsu, Japan, magnitude 4.2) - too old (532.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km W of Bantogon, Philippines, magnitude 5.4) - too old (532.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km NNE of Manokwari, Indonesia, magnitude 4.1) - too old (533.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (117 km ESE of Modisi, Indonesia, magnitude 4.6) - too old (534.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km WNW of Calingasta, Argentina, magnitude 4.4) - too old (534.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km ENE of Murghob, Tajikistan, magnitude 4.5) - too old (535.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km WSW of Sangay, Philippines, magnitude 4.6) - too old (535.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km WNW of Bantogon, Philippines, magnitude 4.6) - too old (535.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (248 km S of Dampit, Indonesia, magnitude 4.4) - too old (535.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km SE of Severo-Kuril’sk, Russia, magnitude 4.1) - too old (535.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (132 km N of Lae, Papua New Guinea, magnitude 4.4) - too old (537.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (North Pacific Ocean, magnitude 4.8) - too old (537.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (5 km SW of Chapeltique, El Salvador, magnitude 4.5) - too old (537.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (24 km W of Bantogon, Philippines, magnitude 5.1) - too old (538.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km W of Sangay, Philippines, magnitude 4.8) - too old (538.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (123 km SSW of Hihifo, Tonga, magnitude 4.4) - too old (538.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (22 km E of Hihifo, Tonga, magnitude 4.4) - too old (539.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (58 km WSW of Lithakiá, Greece, magnitude 4.6) - too old (540.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (26 km W of Sangay, Philippines, magnitude 4.7) - too old (540.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (42 km WSW of Sangay, Philippines, magnitude 4.2) - too old (540.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (9 km WNW of Bantogon, Philippines, magnitude 5) - too old (541.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (27 km W of Sangay, Philippines, magnitude 5.2) - too old (541.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km N of Pagudpud, Philippines, magnitude 4.5) - too old (541.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km W of Bantogon, Philippines, magnitude 5.1) - too old (542.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km W of Sangay, Philippines, magnitude 4.6) - too old (542.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (60 km S of Panubigan, Philippines, magnitude 4.3) - too old (543.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km W of Bantogon, Philippines, magnitude 4.7) - too old (543.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (117 km NNW of Ternate, Indonesia, magnitude 4.2) - too old (543.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (164 km WSW of Bengkulu, Indonesia, magnitude 4.7) - too old (544.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (62 km NNW of Neiafu, Tonga, magnitude 4.7) - too old (545.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (2 km NW of Pāhala, Hawaii, magnitude 4.23) - too old (549.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (129 km NNW of Kimbe, Papua New Guinea, magnitude 4.5) - too old (550.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (41 km S of Cilacap, Indonesia, magnitude 4.1) - too old (550.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southeast of the Loyalty Islands, magnitude 4.5) - too old (550.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.2) - too old (550.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (96 km SSW of Puerto San José, Guatemala, magnitude 4) - too old (551.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (5 km SE of Pundong, Indonesia, magnitude 4.6) - too old (552.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (126 km NW of Hihifo, Tonga, magnitude 4.1) - too old (553.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (186 km WNW of Houma, Tonga, magnitude 4.5) - too old (553.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (254 km ESE of Ozernovskiy, Russia, magnitude 5) - too old (554.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (181 km E of Petropavlovsk-Kamchatsky, Russia, magnitude 4.4) - too old (554.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (76 km ESE of Nemuro, Japan, magnitude 5.2) - too old (555.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (64 km NE of Hamatonbetsu, Japan, magnitude 4.5) - too old (556.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5.2) - too old (557.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km SW of Ponorogo, Indonesia, magnitude 5.7) - too old (557.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (131 km SW of Abepura, Indonesia, magnitude 4.5) - too old (557.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (30 km W of Foxton Beach, New Zealand, magnitude 4.6) - too old (557.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (201 km NNW of Tobelo, Indonesia, magnitude 4.5) - too old (557.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (179 km SSE of Vilyuchinsk, Russia, magnitude 5) - too old (557.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (210 km ESE of Ozernovskiy, Russia, magnitude 4.9) - too old (557.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (175 km E of Ozernovskiy, Russia, magnitude 4.3) - too old (557.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (24 km N of Bandar Abbas, Iran, magnitude 4.3) - too old (558.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 5.2) - too old (559.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (126 km S of Vilyuchinsk, Russia, magnitude 4.2) - too old (559.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (215 km ESE of Levuka, Fiji, magnitude 4.4) - too old (560.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (77 km E of Monte Patria, Chile, magnitude 4.4) - too old (560.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (79 km W of Ollagüe, Chile, magnitude 4.2) - too old (560.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km SSW of Mendi, Papua New Guinea, magnitude 4.6) - too old (560.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km SE of Poso, Indonesia, magnitude 4.3) - too old (561.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands region, magnitude 4.7) - too old (561.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (265 km SW of Gizo, Solomon Islands, magnitude 4.6) - too old (562.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (15 km S of Hengchun, Taiwan, magnitude 4.5) - too old (563.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (48 km SW of Ialibu, Papua New Guinea, magnitude 4.2) - too old (564.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Carlsberg Ridge, magnitude 4.9) - too old (565.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 4.7) - too old (565.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km WSW of Ialibu, Papua New Guinea, magnitude 4.4) - too old (565.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (46 km SSW of Mendi, Papua New Guinea, magnitude 5.6) - too old (565.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 4.9) - too old (566.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (90 km SW of Jiquilillo, Nicaragua, magnitude 4.3) - too old (567.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.3) - too old (567.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (56 km WNW of Pante Makasar, Timor Leste, magnitude 4.2) - too old (567.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (147 km ESE of Severo-Kuril’sk, Russia, magnitude 5) - too old (567.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km ENE of Orcopampa, Peru, magnitude 4.2) - too old (568.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (154 km SW of Labuan, Indonesia, magnitude 4.6) - too old (568.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (28 km SSW of Dalbandin, Pakistan, magnitude 4.1) - too old (568.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (59 km SSE of ‘Ohonua, Tonga, magnitude 5.1) - too old (569.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (175 km SSW of Severo-Kuril’sk, Russia, magnitude 4.8) - too old (570.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kermadec Islands, New Zealand, magnitude 5.4) - too old (571.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km WNW of Tatitlek, Alaska, magnitude 4) - too old (571.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (66 km SSE of ‘Ohonua, Tonga, magnitude 5.2) - too old (571.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (17 km NE of Hirara, Japan, magnitude 4.3) - too old (571.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (42 km SE of Miyakojima, Japan, magnitude 4.4) - too old (571.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Volcano Islands, Japan region, magnitude 4.4) - too old (572.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km SW of Snyder, Texas, magnitude 4.3) - too old (572.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (188 km SE of Vilyuchinsk, Russia, magnitude 5.1) - too old (572.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (80 km W of San Antonio de los Cobres, Argentina, magnitude 4.3) - too old (574.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (12 km NNE of Villa El Carmen, Nicaragua, magnitude 4.5) - too old (574.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (west of Macquarie Island, magnitude 5) - too old (575.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Rat Islands, Aleutian Islands, Alaska, magnitude 4.2) - too old (575.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (9 km ESE of Dianga, China, magnitude 5.5) - too old (575.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km SSW of Santa Lucía, Peru, magnitude 4.2) - too old (576.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (west of Macquarie Island, magnitude 5.7) - too old (576.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (168 km SE of Vilyuchinsk, Russia, magnitude 5) - too old (577.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (59 km S of ‘Ohonua, Tonga, magnitude 5.4) - too old (579.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Izu Islands, Japan region, magnitude 4.5) - too old (579.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southern Mid-Atlantic Ridge, magnitude 5.8) - too old (579.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southern Mid-Atlantic Ridge, magnitude 5) - too old (580.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (127 km N of Labuan Bajo, Indonesia, magnitude 4.3) - too old (580.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (135 km NE of Lospalos, Timor Leste, magnitude 5.1) - too old (581.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km SSE of Sındırgı, Turkey, magnitude 4.4) - too old (581.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km W of Sangay, Philippines, magnitude 4.3) - too old (582.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km NNW of Iwaizumi, Japan, magnitude 4.5) - too old (582.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (54 km ESE of La Tirana, Chile, magnitude 4.2) - too old (582.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km SSE of Jurm, Afghanistan, magnitude 4.2) - too old (582.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (110 km NNW of Pante Makasar, Timor Leste, magnitude 4.3) - too old (583.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km WSW of Sangay, Philippines, magnitude 4.6) - too old (583.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Volcano Islands, Japan region, magnitude 5) - too old (584.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (65 km NW of Uken, Japan, magnitude 4.3) - too old (584.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km WSW of Gul’cha, Kyrgyzstan, magnitude 4.3) - too old (584.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km SSE of Nizhneangarsk, Russia, magnitude 4) - too old (584.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km N of Honoria, Peru, magnitude 4.6) - too old (586.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km WNW of Illapel, Chile, magnitude 4.5) - too old (587.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (9 km SSW of Epitálio, Greece, magnitude 4.1) - too old (588.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (122 km SSE of Sand Point, Alaska, magnitude 4.1) - too old (590.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Kermadec Islands, magnitude 4.4) - too old (592.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km SE of Hengchun, Taiwan, magnitude 4.7) - too old (595.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (10 km SSW of Sındırgı, Turkey, magnitude 4.1) - too old (597.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (112 km S of Bambanglipuro, Indonesia, magnitude 4.9) - too old (597.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (112 km W of Sola, Vanuatu, magnitude 4.3) - too old (598.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Bonin Islands, Japan region, magnitude 4.8) - too old (599.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (247 km WSW of Tual, Indonesia, magnitude 5.1) - too old (600.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.6) - too old (601.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.9) - too old (602.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km N of Yakutat, Alaska, magnitude 4.1) - too old (602.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (208 km SSW of Severo-Kuril’sk, Russia, magnitude 4.4) - too old (603.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km NNE of Sakai, Japan, magnitude 4.4) - too old (603.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (18 km N of Sofifi, Indonesia, magnitude 4.6) - too old (606.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (26 km SSW of Tobelo, Indonesia, magnitude 4) - too old (606.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southeast of Easter Island, magnitude 4.8) - too old (606.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (25 km NNW of Shiranuka, Japan, magnitude 4) - too old (608.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (2 km N of Apantla, Mexico, magnitude 4.3) - too old (608.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km E of Adak, Alaska, magnitude 5.3) - too old (609.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km WNW of Taksimo, Russia, magnitude 4.3) - too old (610.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (104 km S of Puerto San José, Guatemala, magnitude 4.2) - too old (611.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km W of Sangay, Philippines, magnitude 4.1) - too old (612.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (58 km SSE of Modisi, Indonesia, magnitude 4.5) - too old (613.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km S of Goālpāra, India, magnitude 4.2) - too old (613.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (78 km N of Atka, Alaska, magnitude 4) - too old (614.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (5 km ENE of Cepitá, Colombia, magnitude 4.2) - too old (614.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of Africa, magnitude 4.5) - too old (615.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.8) - too old (618.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (37 km S of Sarangani, Philippines, magnitude 4.5) - too old (619.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (66 km SW of Ocós, Guatemala, magnitude 4.2) - too old (620.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 5) - too old (620.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (37 km NNE of Palu, Indonesia, magnitude 4.2) - too old (620.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (58 km E of Onagawa Chō, Japan, magnitude 4.2) - too old (621.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km SW of Soavinandriana, Madagascar, magnitude 4.9) - too old (622.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (83 km SW of Brisas Barra de Suchiate, Mexico, magnitude 4.2) - too old (626.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km SSW of Paracas, Peru, magnitude 4.2) - too old (629.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (70 km E of Sarangani, Philippines, magnitude 4.5) - too old (629.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (16 km ESE of Aras-asan, Philippines, magnitude 4.3) - too old (630.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km NE of Sarangani, Philippines, magnitude 4.5) - too old (631.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (57 km NE of Kon Tum, Vietnam, magnitude 4.2) - too old (631.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (11 km ESE of Sındırgı, Turkey, magnitude 4.9) - too old (633.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SSW of Daigo, Japan, magnitude 4.5) - too old (633.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (130 km SSW of Sungai Penuh, Indonesia, magnitude 4.2) - too old (634.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Pagan region, Northern Mariana Islands, magnitude 4.1) - too old (634.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (23 km ESE of Nkhata Bay, Malawi, magnitude 4.4) - too old (635.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (256 km W of Houma, Tonga, magnitude 4.2) - too old (635.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (80 km NNW of Provideniya, Russia, magnitude 4.1) - too old (636.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (101 km ESE of Hihifo, Tonga, magnitude 4.7) - too old (636.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (65 km NE of Grande Cache, Canada, magnitude 4) - too old (637.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of Africa, magnitude 4.7) - too old (639.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (western Indian-Antarctic Ridge, magnitude 4) - too old (641.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (57 km SE of Mohr, Iran, magnitude 5.1) - too old (643.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (99 km SE of Ollagüe, Chile, magnitude 4.2) - too old (644.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (289 km S of Boyolangu, Indonesia, magnitude 4.5) - too old (644.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (83 km SE of Palca, Peru, magnitude 4.4) - too old (645.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (68 km NW of Adak, Alaska, magnitude 4.5) - too old (646.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (293 km ESE of Attu Station, Alaska, magnitude 5.1) - too old (646.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of Panama, magnitude 5.1) - too old (646.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (156 km SSE of Simanggang, Malaysia, magnitude 4.8) - too old (646.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (232 km E of Tadine, New Caledonia, magnitude 4.3) - too old (647.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km E of Kinablangan, Philippines, magnitude 4.1) - too old (647.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km SSW of Jurm, Afghanistan, magnitude 4.2) - too old (648.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (43 km NNE of Hualien City, Taiwan, magnitude 4.1) - too old (648.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (112 km S of Honchō, Japan, magnitude 4.1) - too old (649.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (144 km SSE of Honchō, Japan, magnitude 4.2) - too old (650.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (130 km S of Vilyuchinsk, Russia, magnitude 4.4) - too old (652.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (southeast Indian Ridge, magnitude 4.9) - too old (652.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (25 km WNW of Hiroo, Japan, magnitude 4.3) - too old (653.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (42 km WSW of Sangay, Philippines, magnitude 4.3) - too old (658.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (central Mid-Atlantic Ridge, magnitude 4.7) - too old (658.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (56 km SSE of Caucete, Argentina, magnitude 4.3) - too old (658.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (123 km SSE of Sand Point, Alaska, magnitude 5.2) - too old (658.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (52 km S of Jurm, Afghanistan, magnitude 4.5) - too old (663.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km S of Evanston, Wyoming, magnitude 4.65) - too old (663.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (94 km E of Yokohama, Japan, magnitude 5.3) - too old (664.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (113 km S of Vilyuchinsk, Russia, magnitude 4) - too old (664.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kuril Islands, magnitude 4) - too old (665.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (127 km S of Vilyuchinsk, Russia, magnitude 6.2) - too old (665.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (99 km WNW of Ternate, Indonesia, magnitude 4.5) - too old (667.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (22 km W of Villa El Carmen, Nicaragua, magnitude 4) - too old (667.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (116 km WNW of Höfn, Iceland, magnitude 4.4) - too old (668.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (248 km ESE of Tadine, New Caledonia, magnitude 4.6) - too old (669.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (268 km E of Levuka, Fiji, magnitude 4.1) - too old (670.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (7 km W of Mouzaki, Greece, magnitude 4.3) - too old (670.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (90 km W of Ferndale, CA, magnitude 4.27) - too old (671.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km E of Miyako, Japan, magnitude 4.2) - too old (671.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (64 km S of Merizo Village, Guam, magnitude 4.4) - too old (671.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kuril Islands, magnitude 4) - too old (672.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (121 km SSE of Kūh Sefīd, Iran, magnitude 4.7) - too old (673.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km S of Jurm, Afghanistan, magnitude 4.2) - too old (674.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (61 km ESE of Yigo Village, Guam, magnitude 4.9) - too old (674.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (107 km N of Mīnāb, Iran, magnitude 4.5) - too old (675.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Southwest Indian Ridge, magnitude 4.7) - too old (675.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km SSW of Padang, Indonesia, magnitude 4.4) - too old (675.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km W of Sangay, Philippines, magnitude 4.4) - too old (676.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (44 km E of Calama, Chile, magnitude 4.5) - too old (676.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kuril Islands, magnitude 4.3) - too old (677.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (228 km SSW of Pelabuhanratu, Indonesia, magnitude 4.3) - too old (677.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (56 km NE of Mek'ele, Ethiopia, magnitude 4.2) - too old (678.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (229 km NW of Tobelo, Indonesia, magnitude 4) - too old (678.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (15 km SE of Sındırgı, Turkey, magnitude 4.1) - too old (679.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (52 km NE of Mek'ele, Ethiopia, magnitude 4.4) - too old (679.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km E of Cortes, Philippines, magnitude 4.3) - too old (679.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (83 km N of Luwuk, Indonesia, magnitude 5.1) - too old (679.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km NNE of Hihifo, Tonga, magnitude 4.3) - too old (680.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Carlsberg Ridge, magnitude 4.4) - too old (680.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 4.4) - too old (680.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Carlsberg Ridge, magnitude 4.3) - too old (680.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (92 km SSE of Hayuliang, India, magnitude 5.2) - too old (680.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (108 km SSE of Port-Vila, Vanuatu, magnitude 4.3) - too old (681.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (259 km ESE of Tadine, New Caledonia, magnitude 4.4) - too old (681.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (12 km SE of Sındırgı, Turkey, magnitude 4.5) - too old (682.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kuril Islands, magnitude 4.2) - too old (685.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Volcano Islands, Japan region, magnitude 6.1) - too old (686.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (3 km SSW of Zirándaro de los Chávez, Mexico, magnitude 4.8) - too old (686.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km SSE of Sındırgı, Turkey, magnitude 4.6) - too old (687.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (167 km N of Baukau, Timor Leste, magnitude 4.4) - too old (688.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (47 km SSE of Denali National Park, Alaska, magnitude 4.1) - too old (688.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (206 km W of Abepura, Indonesia, magnitude 4.5) - too old (688.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (88 km E of Petropavlovsk-Kamchatsky, Russia, magnitude 4.1) - too old (688.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km N of Kızkalesi, Turkey, magnitude 4.2) - too old (689.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km W of Bantogon, Philippines, magnitude 4.7) - too old (689.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.4) - too old (689.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (14 km SSW of Jilikŭl, Tajikistan, magnitude 4.4) - too old (690.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km W of Sangay, Philippines, magnitude 4.7) - too old (690.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (200 km SSW of Kokopo, Papua New Guinea, magnitude 4.3) - too old (691.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (15 km S of Colonia Juárez, Mexico, magnitude 4.2) - too old (691.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (116 km S of Waingapu, Indonesia, magnitude 4.1) - too old (693.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (4 km E of Polkowice, Poland, magnitude 4.2) - too old (693.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Kuril Islands, magnitude 4.5) - too old (693.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (28 km WSW of Sangay, Philippines, magnitude 4.5) - too old (693.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (20 km NNE of Indio, CA, magnitude 4.25596203401461) - too old (694.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km NW of San Antonio de los Cobres, Argentina, magnitude 4.4) - too old (695.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Banda Sea, magnitude 5.1) - too old (696.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (35 km WSW of Sangay, Philippines, magnitude 4.7) - too old (697.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 5.1) - too old (697.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (280 km N of Gorontalo, Indonesia, magnitude 4.7) - too old (698.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Volcano Islands, Japan region, magnitude 4.6) - too old (698.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (69 km NNW of Isangel, Vanuatu, magnitude 4) - too old (698.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (98 km NNW of Ternate, Indonesia, magnitude 4.4) - too old (699.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (45 km WSW of Sangay, Philippines, magnitude 4.3) - too old (699.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (51 km WSW of Sangay, Philippines, magnitude 4.4) - too old (700.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (39 km WSW of Sangay, Philippines, magnitude 5.4) - too old (701.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (31 km W of Sangay, Philippines, magnitude 4.7) - too old (701.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km W of Sangay, Philippines, magnitude 4.5) - too old (701.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (37 km WSW of Sangay, Philippines, magnitude 4.2) - too old (701.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (192 km N of Qalansīyah, Yemen, magnitude 5.3) - too old (701.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (192 km N of Qalansīyah, Yemen, magnitude 4.6) - too old (701.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (206 km SE of Hiroo, Japan, magnitude 4.5) - too old (701.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km WSW of Sangay, Philippines, magnitude 4.4) - too old (701.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km NE of Horonobe, Japan, magnitude 4.3) - too old (702.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (115 km E of Luganville, Vanuatu, magnitude 4.9) - too old (702.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (174 km NNE of Qalansīyah, Yemen, magnitude 5) - too old (702.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (178 km N of Qalansīyah, Yemen, magnitude 4.6) - too old (702.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km N of Astypálaia, Greece, magnitude 4) - too old (702.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (19 km SSW of Malisbeng, Philippines, magnitude 4.4) - too old (702.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (38 km WSW of Sangay, Philippines, magnitude 4.5) - too old (703.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (240 km ESE of Tadine, New Caledonia, magnitude 4.9) - too old (703.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (28 km WSW of Sangay, Philippines, magnitude 4.8) - too old (703.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (South Sandwich Islands region, magnitude 4.6) - too old (703.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (29 km SW of Quilino, Argentina, magnitude 4.2) - too old (703.5 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (175 km NNE of Qalansīyah, Yemen, magnitude 4.6) - too old (704.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (86 km ENE of Bitung, Indonesia, magnitude 4.4) - too old (705.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (115 km E of Luganville, Vanuatu, magnitude 4.8) - too old (706.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (13 km WNW of Nakatonbetsu, Japan, magnitude 4) - too old (706.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Fiji region, magnitude 4.5) - too old (707.0 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (175 km SE of Vilyuchinsk, Russia, magnitude 4.3) - too old (707.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (124 km E of Yamada, Japan, magnitude 4.4) - too old (707.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (159 km ENE of Thang, India, magnitude 4.5) - too old (708.6 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (66 km ENE of Mutsu, Japan, magnitude 5.3) - too old (708.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (40 km S of Mbumi, Tanzania, magnitude 5.3) - too old (709.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (84 km SW of Teluk Dalam, Indonesia, magnitude 4.4) - too old (710.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (32 km SE of Khorugh, Tajikistan, magnitude 4.3) - too old (710.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (36 km WSW of Sangay, Philippines, magnitude 4.2) - too old (711.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (109 km W of Buala, Solomon Islands, magnitude 4.4) - too old (712.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (261 km ESE of Tadine, New Caledonia, magnitude 5) - too old (712.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (157 km WSW of Abepura, Indonesia, magnitude 4.1) - too old (713.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (78 km ESE of Kokopo, Papua New Guinea, magnitude 4.4) - too old (713.4 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (8 km ESE of Santiago Astata, Mexico, magnitude 5) - too old (715.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (Carlsberg Ridge, magnitude 5) - too old (715.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (34 km W of Sangay, Philippines, magnitude 4.7) - too old (716.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (87 km ESE of Severo-Kuril’sk, Russia, magnitude 4.2) - too old (716.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (12 km NE of Norak, Tajikistan, magnitude 4.4) - too old (716.7 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (6 km SW of Sainte-Rose, Guadeloupe, magnitude 4.4) - too old (717.1 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (south of the Fiji Islands, magnitude 4.7) - too old (717.8 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (37 km NNE of Hihifo, Tonga, magnitude 4.6) - too old (718.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (191 km NNW of Sola, Vanuatu, magnitude 5) - too old (718.3 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (24 km ESE of Madang, Papua New Guinea, magnitude 5.9) - too old (719.2 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (10 km W of Buenavista, Philippines, magnitude 4.5) - too old (719.9 hours)
+⏭️  EARTHQUAKE MONITOR: Skipping earthquake (111 km S of Koróni, Greece, magnitude 4.4) - too old (719.9 hours)
+✅ MAGNETIC FIELD MONITOR: Running in background
+✅ EARTHQUAKE PREDICTION: Running in background
+
+⏳ Waiting 300 seconds until next monitoring cycle...
+
