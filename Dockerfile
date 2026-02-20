@@ -19,8 +19,8 @@ ENV PATH="/root/.cargo/bin:$PATH"
 ENV RUSTUP_HOME="/root/.rustup"
 ENV CARGO_HOME="/root/.cargo"
 
-# Install Solana CLI only. Non-interactive (-y). Do NOT write to .bashrc; use ENV only.
-RUN curl -sSfL https://release.anza.xyz/stable/install | sh -s -- -y
+# Install Solana CLI. Non-interactive: use --data-dir (installer does not accept -y).
+RUN curl -sSfL https://release.anza.xyz/stable/install | sh -s -- --data-dir /root/.local/share/solana
 
 # Set PATH via ENV only (required by Render; no .bashrc)
 ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
