@@ -16,10 +16,9 @@ ENV PATH="/root/.cargo/bin:$PATH"
 # Verify Rust installation
 RUN rustc --version
 
-# Install Solana CLI. --data-dir + release (stable) required for non-interactive install.
+# Solana CLI: one RUN only. Args: --data-dir <path> then release (stable).
 RUN curl -sSfL https://release.anza.xyz/stable/install | sh -s -- --data-dir /root/.local/share/solana stable
 
-# Set PATH via ENV only (required by Render; no .bashrc)
 ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 
 # Verify Solana CLI installation
