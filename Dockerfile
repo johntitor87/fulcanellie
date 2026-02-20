@@ -1,26 +1,28 @@
-# Use a lightweight base image
-FROM debian:bullseye-slim
+# Solana CLI requires GLIBC 2.32+ (bullseye has 2.31). Use bookworm.
+FROM debian:bookworm-slim
 
 # Set non-interactive frontend for apt
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install required dependencies and Rust
+# Install required dependencies
 RUN apt-get update && apt-get install -y \
     curl build-essential libssl-dev pkg-config nano \
-    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Add Rust to PATH
+# Install Rust
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+    echo 'source $HOME/.cargo/env' >> /root/.bashrc && \
+    . $HOME/.cargo/env
+
+# Rust environment for all subsequent RUN/CMD
 ENV PATH="/root/.cargo/bin:$PATH"
+ENV RUSTUP_HOME="/root/.rustup"
+ENV CARGO_HOME="/root/.cargo"
 
-# Verify Rust installation
-RUN rustc --version
+# Install Solana CLI only. Non-interactive (-y). Do NOT write to .bashrc; use ENV only.
+RUN curl -sSfL https://release.anza.xyz/stable/install | sh -s -- -y
 
-# Install Solana CLI
-RUN curl -sSfL https://release.anza.xyz/stable/install | sh \
-    && echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
-
-# Add Solana CLI to PATH
+# Set PATH via ENV only (required by Render; no .bashrc)
 ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 
 # Verify Solana CLI installation
