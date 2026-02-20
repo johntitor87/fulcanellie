@@ -34,4 +34,3 @@ WORKDIR /solana-token
 
 # Default command to run a shell
 CMD ["/bin/bash"]
-
