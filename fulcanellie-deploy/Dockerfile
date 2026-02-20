@@ -1,5 +1,5 @@
-# Use a lightweight base image
-FROM debian:bullseye-slim
+# Solana CLI requires GLIBC 2.32+ (bullseye has 2.31). Use bookworm.
+FROM debian:bookworm-slim
 
 # Set non-interactive frontend for apt
 ENV DEBIAN_FRONTEND=noninteractive
